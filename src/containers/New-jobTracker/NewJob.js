@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './NewJob.css';
-import firebase from '../firebase';
+import firebase from '../../components/firebase';
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';  
 

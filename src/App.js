@@ -7,8 +7,11 @@ import NewJob from './containers/New-jobTracker/NewJob';
 function App() {
   return (
       <div className='container'>
-        <Route exact path="/" component={Home}/>
-        <Route path="/new-track" component={NewJob}/>
+        <Router>
+          <Route exact path="/" component={Home}/>
+          <Route path="/new-track" component={NewJob}/>
+        </Router>
+        
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Track from './Track';
-import firebase from '../firebase';
+import firebase from './firebase';
 
 export default function TrackList() {
   const [trackList, setTrackList] = useState();
