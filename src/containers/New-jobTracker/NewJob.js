@@ -93,7 +93,7 @@ export default function NewJob() {
         };
 
     return (
-        <div className="new-order">
+        <div className="new-track">
             <h1>New Job Track</h1>  
             <input
                 type="text" 
@@ -145,7 +145,7 @@ export default function NewJob() {
                 onChange={getOffer}
                 value={offer}
                 placeholder="Job Offer"/>
-            <button onClick={createJobtrack} className="btn-create">Add Job Track</button>
+            <button onClick={createJobtrack} className="btn-add">Add Job Track</button>
         </div>
     )
 }

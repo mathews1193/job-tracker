@@ -1,5 +1,11 @@
+body{
+background-color: lightgoldenrodyellow;
+position: relative;
+background-size:cover;
+}
+
 .App-header {
-  background-color: #282c34; 
+  background-image: url("city.jpg");
   text-align: center;
   min-height: 40vh;
   display: flex;

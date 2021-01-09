@@ -2,6 +2,7 @@ import React from 'react';
 import firebase from './firebase';
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import "./track.css";
 
 toast.configure();
 
@@ -33,6 +34,7 @@ export default function Track({ trackList }) {
         <p>Programming Languages Requirements: {trackList.programmingLang}</p>
         <p>Status: {trackList.currentStatus}</p>
         <p>Offer (Yes / No): {trackList.offer}</p>
+        
       </div>
       <div className="btn-ud"> 
         <button className="complete" onClick={jobStatus}>Update Status</button>
