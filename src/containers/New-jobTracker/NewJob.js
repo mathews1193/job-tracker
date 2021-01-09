@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import './NewJob.css';
 import firebase from '../../components/firebase';
 import {toast} from 'react-toastify';
@@ -93,8 +94,12 @@ export default function NewJob() {
         };
 
     return (
+        <div>
+             <header className="App-header"> 
+                <Link to="/"><button className="btn-add"> Home</button></Link>
+                <h1>New Job Track</h1>
+            </header>
         <div className="new-track">
-            <h1>New Job Track</h1>  
             <input
                 type="text" 
                 className="search-bar"
@@ -146,6 +151,7 @@ export default function NewJob() {
                 value={offer}
                 placeholder="Job Offer"/>
             <button onClick={createJobtrack} className="btn-add">Add Job Track</button>
+            </div>  
         </div>
     )
 }
